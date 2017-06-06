@@ -1,35 +1,23 @@
-# digit-recognizer-flask-cnn
-A simple web application that recognizes handwritten digits. Developed using [TensorFlow](https://www.tensorflow.org/) and the super simple [Keras](http://keras.io/) Library. 
-Wrapped into a Webapp using [Flask](http://flask.pocoo.org/) Micro Framework.
+# How to Deploy a Keras Model to Production
 
-Convolutional Neural Network(CNN) is a type of ANN inspired by the organization of animals' visual cortex. It is used in most of the image recognition tasks.
 
-This model was trained using the MNIST Handwritten digits dataset. 
+## Overview
 
-To run it locally, first clone the directory. 
+This is the code for [this]() video on Youtube by Siraj Raval. We're going to build a model that recognizes handwritten digit images (MNIST).  Developed using [TensorFlow](https://www.tensorflow.org/) and the super simple [Keras](http://keras.io/) Library. Wrapped into a Webapp using [Flask](http://flask.pocoo.org/) Micro Framework.
 
-```git clone https://github.com/moinudeen/digit-recognizer-flask-cnn.git``` 
-
-Next cd into the directory.
-
-```cd digit-recognizer-flask-cnn```
-
-Then install the dependencies using pip.
+## Dependencies
 
 ```sudo pip install -r requirements.txt```
 
-To start the Flask Server,
+## Usage
+
+Once dependencies are installed, just run this to see it in your browser. 
 
 ```python app.py```
 
-##Hurray!!
+That's it! It's serving a saved Keras model to you via Flask. 
 
- 
-![alt text][logo]
+## Credits
 
-[logo]: https://github.com/moinudeen/digit-recognizer-flask-cnn/blob/master/screenshot.png "A screenshot of the app"
-
-
-
-
+The credits for this code go to [moinudeen](https://github.com/moinudeen). I've merely created a wrapper to get people started.
 
