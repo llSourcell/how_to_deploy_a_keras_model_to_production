@@ -3,7 +3,7 @@
 
 ## Overview
 
-This is the code for [this]() video on Youtube by Siraj Raval. We're going to build a model that recognizes handwritten digit images (MNIST).  Developed using [TensorFlow](https://www.tensorflow.org/) and the super simple [Keras](http://keras.io/) Library. Wrapped into a Webapp using [Flask](http://flask.pocoo.org/) Micro Framework.
+This is the code for [this](https://youtu.be/f6Bf3gl4hWY) video on Youtube by Siraj Raval. We're going to build a model that recognizes handwritten digit images (MNIST).  Developed using [TensorFlow](https://www.tensorflow.org/) and the super simple [Keras](http://keras.io/) Library. Wrapped into a Webapp using [Flask](http://flask.pocoo.org/) Micro Framework.
 
 ## Dependencies
 
