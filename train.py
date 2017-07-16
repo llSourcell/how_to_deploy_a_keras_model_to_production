@@ -18,6 +18,8 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from keras import backend as K
 
+from keras.models import model_from_json
+
 #mini batch gradient descent ftw
 batch_size = 128
 #10 difference characters
