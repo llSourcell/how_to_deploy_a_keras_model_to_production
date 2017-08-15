@@ -19,7 +19,8 @@ loaded_model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['
 x = imread('output.png',mode='L')
 x = np.invert(x)
 x = imresize(x,(28,28))
-imshow(x)
+# OSX errors from the following line
+# imshow(x)
 x = x.reshape(1,28,28,1)
 
 out = loaded_model.predict(x)
