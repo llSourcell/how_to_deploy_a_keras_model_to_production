@@ -16,7 +16,7 @@ import numpy as np
 import keras.models
 #for regular expressions, saves time dealing with string data
 import re
-
+import base64
 #system level operations (like loading files)
 import sys 
 #for reading operating system data
@@ -32,11 +32,12 @@ global model, graph
 model, graph = init()
 
 #decoding an image from base64 into raw representation
-def convertImage(imgData1):
-	imgstr = re.search(r'base64,(.*)',imgData1).group(1)
-	#print(imgstr)
+
+def convertImage(imgData1): 
+	imgstr = re.search(b'base64,(.*)',imgData1).group(1) 
+	#print(imgstr) 
 	with open('output.png','wb') as output:
-		output.write(imgstr.decode('base64'))
+		output.write(base64.b64decode(imgstr))
 	
 
 @app.route('/')
